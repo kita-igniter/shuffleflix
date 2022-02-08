@@ -1,0 +1,15 @@
+{
+	"name": "rocketflix",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"sass": "sass --watch scss/main.scss css/main.css"
+	},
+	"keywords": [],
+	"author": "Samuel Mesquita",
+	"license": "ISC",
+	"dependencies": {
+		"sass": "^1.49.7"
+	}
+}

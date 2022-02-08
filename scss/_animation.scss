@@ -1,0 +1,11 @@
+.animate {
+	animation: 1.3s animate;
+}
+@keyframes animate {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

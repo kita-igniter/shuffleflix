@@ -1,0 +1,20 @@
+@import "reset";
+@import "variables";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+body {
+	background: $background;
+	color: $title;
+	font-family: "Poppins", sans-serif;
+}
+.movie_section {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100vw;
+	height: calc(100vh - 8em);
+	margin-top: 8em;
+	overflow-y: hidden;
+}
+@import "section_movies";
+@import "movie_block";
+@import "animation";

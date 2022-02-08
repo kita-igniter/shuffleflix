@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+  color: #fffcf9;
+  font-family: "Poppins", sans-serif;
+}
+
+.movie_section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100vw;
+  height: calc(100vh - 8em);
+  margin-top: 8em;
+  overflow-y: hidden;
+}
+
+.section__movies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  gap: 1em;
+}
+.section__movies h1 {
+  font-size: 2.8em;
+  text-align: center;
+}
+.section__movies img {
+  width: 100px;
+}
+.section__movies a {
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e9e6e3;
+  color: #000;
+  border-radius: 2px;
+  padding: 7px;
+  gap: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+.section__movies a:hover {
+  background: #fff;
+}
+.section__movies a img {
+  width: 30px;
+}
+.section__movies a span {
+  font-size: 1em;
+  font-weight: 500;
+}
+.section__movies p {
+  width: 350px;
+  font-size: 0.8em;
+  font-weight: 100;
+  text-align: center;
+  color: #b3b3b3;
+}
+
+.movies__info div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 2em;
+}
+.movies__info div .info__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.movies__info div .info__text h3,
+.movies__info div .info__text p {
+  text-align: left;
+}
+.movies__info div .info__img {
+  align-items: flex-start;
+}
+.movies__info div .info__img img {
+  width: 180px;
+}
+
+@media screen and (max-width: 768px) {
+  .movie_section {
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    overflow-y: scroll;
+  }
+  .movie_section .section__movies {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  .movie_section .section__movies h1 {
+    font-size: 1.75em;
+  }
+  .movie_section .section__movies p {
+    width: 100%;
+  }
+  .movie_section .section__movies .movies__info div {
+    align-items: center;
+    flex-direction: column;
+  }
+  .movie_section .section__movies .movies__info div .info__text p {
+    text-align: center;
+  }
+}
+.animate {
+  animation: 1.3s animate;
+}
+
+@keyframes animate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
